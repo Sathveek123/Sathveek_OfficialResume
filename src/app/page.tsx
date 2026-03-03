@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Navbar } from "@/components/Navbar";
 import { ContactForm } from "@/components/ContactForm";
 import { Footer } from "@/components/Footer";
 import { CountUp } from "@/components/CountUp";
@@ -146,8 +145,6 @@ export default function Home() {
         <div className="bg-orb orb-2 right-[-260px] top-[240px] h-[560px] w-[560px] bg-[radial-gradient(circle,rgba(59,130,246,0.18),transparent_62%)]" />
         <div className="bg-orb orb-3 left-[20%] bottom-[-320px] h-[680px] w-[680px] bg-[radial-gradient(circle,rgba(124,58,237,0.14),transparent_64%)]" />
       </div>
-      <Navbar />
-
       <main className="pt-28">
         <EnhancedHero />
 

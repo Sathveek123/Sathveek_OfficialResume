@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { CustomCursor } from "@/components/CustomCursor";
+import { Navbar } from "@/components/Navbar";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import "./globals.css";
 
@@ -14,6 +15,10 @@ export const metadata: Metadata = {
   title: "Sathveek Nalla — AI Systems Architect & Automation Engineer",
   description:
     "I design and build intelligent systems that solve real-world complexity — AI rule engines, trading automation, simulation systems, and full-stack dashboards.",
+  icons: {
+    icon: "/images/portrait.png",
+    apple: "/images/portrait.png",
+  },
   openGraph: {
     title: "Sathveek Nalla — AI Systems Architect & Automation Engineer",
     description:
@@ -40,6 +45,7 @@ export default function RootLayout({
           <div className="hidden lg:block">
             <CustomCursor />
           </div>
+          <Navbar />
           {children}
         </ThemeProvider>
       </body>
